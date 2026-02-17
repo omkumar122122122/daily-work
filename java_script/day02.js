@@ -144,6 +144,33 @@ function rmv_dupli(arr){
     return a;
 }
 // rmv_dupli(app)
-console.log(rmv_dupli(app))
-rm
+// console.log(rmv_dupli(app))
+
 // let app=[-1,4,8,5,7,5,9,6,5,6,7,4,0,0,0,2,5,5,5,8,,8,9,2,4,5,5,2,14,8,-2,-3,-4,-5,-6,-7,-8,-9,-4,-5,-8,-2,-1,-3,-1,7,,-1,-28];
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//longest consecutive sequence in an array.
+
+function return_longest_cons(arr){
+    let l=0,ml=0,mi=0,ci=0;
+    for(i=0;i<arr.length;i++){
+        if((arr[i]+1)==arr[i+1]){
+            l++;
+        }
+        else{
+            if(ml<l){
+                ml=l+1;
+                mi=ci;
+            }
+            l=0;
+            ci=i+1;
+            // console.log(ml,ci)
+        }
+    }
+    for(i=mi;i<mi+ml;i++){
+        console.log(arr[i]);
+    }
+}
+arp=[1,2,35,8,9,10,11,12,5,8,7,8,9,10,11,12,13]
+return_longest_cons(arp);
