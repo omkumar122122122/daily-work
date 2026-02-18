@@ -172,5 +172,5 @@ function return_longest_cons(arr){
         console.log(arr[i]);
     }
 }
-arp=[1,2,35,8,9,10,11,12,5,8,7,8,9,10,11,12,13]
+arp=[1,2,35,8,9,10,11,12,5,8,6,7,8,9,10,11,12,13]
 return_longest_cons(arp);
