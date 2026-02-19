@@ -1,17 +1,6 @@
-//string
-// let n="ihdbci";
-// let n2=`nuxi`
-// let n3="123"
-// let n4=123;
-// // console.log(typeof(n))
-// n[0]=4;
-// console.log(n)
-// // console.log(n3+n4)
-// n.replace("i","p")
-// console.log(n.replace("o","p"))
-// consolReape.log(n.toUpperCase())
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//
+//practice string
+
+
 //return non reperting charecter
 function rtn_non_rpt(str){
     let isNotRepeating;
@@ -178,9 +167,3 @@ function rtn_2nd_largest(str){
 }
 let sip="hi hiii hiiii hiiiii hiiiiii hi hi hi omomomomomomom";
 // rtn_2nd_largest(sip);
-
-
-
-
-
-
