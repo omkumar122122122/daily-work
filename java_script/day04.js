@@ -167,3 +167,48 @@ function rtn_2nd_largest(str){
 }
 let sip="hi hiii hiiii hiiiii hiiiiii hi hi hi omomomomomomom";
 // rtn_2nd_largest(sip);
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ //return nth largest word from array
+
+ function rtn_nth_largest(str,n){
+    let s="",ar=[],a,larg=-Infinity,sndlarge=-Infinity,s1="",s2="";
+    str+=" ";
+    for(i=0;i<str.length;i++){
+        
+        if(str[i]!=" "){
+            s+=str[i]
+        }
+        else{
+            ar[ar.length]=s;
+            s="";
+        }
+    }
+    for(i=0;i<ar.length;i++){
+        if(ar[i].length>larg){
+            larg=ar[i].length;
+            s1=ar[i];
+        }
+    }
+    if(n==1){
+        console.log(s1,larg)
+        return;
+    }
+    for(k=1;k<n;k++){
+        for(i=0;i<ar.length;i++){
+        if(ar[i].length<larg && ar[i].length>sndlarge){
+            sndlarge=ar[i].length;
+            s2=ar[i];
+        }
+    }
+    if(k!=n-1){
+        larg=sndlarge;
+    sndlarge=-Infinity;
+    }
+    }
+    console.log(s2,sndlarge);
+    
+ }
+ sip="hi hiii hiiii hiiiii hiiiiii hi hi hi omomomomomomom";
+ rtn_nth_largest(sip,1)
