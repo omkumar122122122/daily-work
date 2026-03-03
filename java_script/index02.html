@@ -1,0 +1,112 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo" class="demo01"></p>
+    <p class="demo01"></p>
+    <p class="demo01"></p>
+    <script>
+        // const text = document.getElementById("demo");
+        const text = document.getElementsByClassName("demo01");
+        // text.textContent = "<h1>Hello World!</h1>"
+        text[0].innerHTML = "<b>Hello World!</b>"
+        text[1].innerHTML = "<h1>Hello </h1>"
+        </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo" class="faaa">jkkkk</p>
+    <p id="demo1" class="faaa">hyyyy</p>
+    <script>
+        // // const text = document.getElementById("demo");
+        // const text = document.querySelector("p.faaa")
+        // // text.innerHTML = "Hello World!"
+        // text.style.border='2px solid black'
+        // // text.style='red'
+    </script>
+    <script src="day06DOM.js"></script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo" class="faaa"></p>
+    <script>
+        let p = document.createElement("p");
+        p.textContent = "Hello, world!";
+        document.body.appendChild(p);
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo" class="faaa"></p>
+    bu
+    <script>
+        // const text = document.getElementById("demo");
+        // const text = document.querySelector("p")
+        // text.innerHTML = "Hello World!"
+        const p = document.createElement("p")
+        p.innerHTML = "Hello World!"
+        document.body.appendChild(p)
+        
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo" class="faaa"></p>
+    <button onclick="clickMe()">Click Me!</button>
+    <script>
+        // const text = document.getElementById("demo");
+        // const text = document.querySelector("p")
+        // text.innerHTML = "Hello World!"
+        // const p = document.createElement("p")
+        // p.innerHTML = "Hello World!"
+        // document.body.appendChild(p)
+
+        function clickMe() {
+            alert("Button Clicked!");
+        }
+        
+    </script>
+</body>
+</html>
