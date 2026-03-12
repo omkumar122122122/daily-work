@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav id="nav">
+    <div class="logo"><h1 ><b>jH</b></h1></div>
+    <div id="navlink">
+        <a  class="navlink" href="">home</a>
+        <a  class="navlink"href="">info</a>
+        <a  class="navlink"href="">register</a>
+        <a class="navlink" href="">about</a>
+    </div>
+
+   </nav>
+   <section id="hero">
+    <div id="text">
+       <h1>Life in the Dark Depths of the Ocean</h1>
+       <p class="text">The deep ocean remains one of the least explored places on Earth, despite covering more than 70% of the planet’s surface. Thousands of meters below sea level, sunlight disappears and the environment becomes extremely cold and high-pressure, yet life still thrives there. Strange creatures like bioluminescent jellyfish, giant squid, and anglerfish have adapted to survive in this darkness by producing their own light or developing unique hunting methods. Scientists continue to explore these depths using advanced submarines and robotic vehicles, discovering new species and ecosystems almost every year. Studying the deep ocean not only reveals fascinating forms of life but also helps researchers understand Earth’s climate, underwater geology, and the delicate balance of marine ecosystems. 🌊
+    </p> 
+    </div>
+    <div id="image">
+        <div class="inimg">
+           <button id="btn" type="button" onclick="buttn()">></button>
+        <img id="img" src="image.png" alt="ocean">
+       </div> 
+    </div>
+   </section> 
+   <section>
+    
+    <form action=""  id="form">
+        <label for="first-name">first-name</label>
+        <input class="inputform" type="text" id="first-name">
+        <label for="last-name">last-name</label>
+        <input class="inputform" type="text" id="last-name">
+        <label for="addres">addres</label>
+        <input class="inputform" type="text" id="addres">
+        <label for="email">email</label>
+        <input class="inputform" type="text" name="" id="email">
+        <label for="set-pass">set password</label>
+        <input class="inputform" type="password" id="set-pass">
+        <label for="cnfpass">conform password</label>
+        <input class="inputform" type="password" name="" id="cnfpass">
+
+        <button id="show" class="formbutton" type="button" onclick="togglePassword()">Show Password</button>
+        <button class="formbutton" type="submit" onclick="showMessage()">Submit</button>
+    </form>
+   </section>
+   <h1 id="greet"><b></b></h1>
+   <script src="script.js"></script>
+</body>
+</html>
