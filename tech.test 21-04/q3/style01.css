@@ -1,0 +1,70 @@
+body{
+    background: #beeafd;
+}
+.li_head div{
+    display:flex
+
+    
+
+}
+.li_head div h3{
+    padding: 0px 100px;
+    padding-left: 10px;
+
+}
+#input{
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+}
+#input input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+    padding: 10px;
+
+
+}
+#input button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 125px;
+    margin: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+    padding: 10px;
+
+
+}
+.li_head{
+    background: #ffffff;
+}
+.habits{
+    display: flex;
+   background: #fba4a4;
+    align-items: center;
+    
+}
+.habits h4{
+    padding: 0px 100px;
+    padding-left: 10px;
+}
+.habits button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 125px;
+    margin: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #beeafd;
+}

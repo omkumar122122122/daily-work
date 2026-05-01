@@ -1,0 +1,27 @@
+body{
+    background-color: antiquewhite;
+}
+#div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#div input{
+    width: 200px;
+    height: 30px;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: aliceblue;
+}
+#div button{
+    background-color: aliceblue;
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgb(248, 208, 135);
+}
