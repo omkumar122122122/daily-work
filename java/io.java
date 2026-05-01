@@ -6,6 +6,6 @@ public class io{
         System.out.println(a);
 
 
-
+sc.close();
     }
 }

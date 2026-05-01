@@ -12,6 +12,7 @@ public class conditional {
         } else {
             System.out.print("adult you are eligibal for vote");
         }
+        sc.close();
     }
     
 }

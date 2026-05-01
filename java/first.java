@@ -22,7 +22,7 @@ public class first{
     int a=input.nextInt(),b=input.nextInt();
     System.out.println(a+b);
 
-
+input.close();
  }   
 
 }
