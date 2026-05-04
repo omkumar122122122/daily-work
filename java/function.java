@@ -39,9 +39,11 @@ public class function {
     }
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        System.out.println("enter a number");
-        int n=sc.nextInt();
-        int re=factorial(n);
+        System.out.println("enter two number");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        // int re=factorial(n);
+        int re=gcd(a,b);
         System.out.println((re));
 
     }
