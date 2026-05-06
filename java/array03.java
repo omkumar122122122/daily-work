@@ -4,7 +4,9 @@ public class array03 {
         Scanner sc=new Scanner(System.in);
         int row=4;
         int col=4;
-        for()
+        for(int i=0;i<row;i++){
+            
+        }
 
 
        
