@@ -7,7 +7,9 @@ public class array02 {
         arr[i]=sc.nextInt();
       }
       System.out.println("enter nuber to search");
+      int n=sc.nextInt();
       
+
 
     }
 }
