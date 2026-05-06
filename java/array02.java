@@ -9,7 +9,9 @@ public class array02 {
       System.out.println("enter nuber to search");
       int n=sc.nextInt();
       for(int i=0;i<10;i++){
-        
+        if(arr[i]==n){
+            
+        }
       }
 
 
