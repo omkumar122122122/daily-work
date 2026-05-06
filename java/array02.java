@@ -10,7 +10,8 @@ public class array02 {
       int n=sc.nextInt();
       for(int i=0;i<10;i++){
         if(arr[i]==n){
-            System.out.println("we found "+n+"in"+i+"index");
+            System.out.println("we found "+n+" in "+i+" index.");
+            break;
         }
       }
 
