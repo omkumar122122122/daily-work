@@ -5,6 +5,7 @@ public class array03 {
         int row=4;
         int col=4;
         int[][] arr=new int[row][col];
+        System.out.println("enter elements of array");
         for(int i=0;i<row;i++){
             for(int j=0;j<col;j++){
                 arr[i][j]=sc.nextInt();
