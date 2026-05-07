@@ -15,7 +15,9 @@ public class array04 {
             }
 
         }
+        System.out.println("enter number to search");
         
+
 
         
 
