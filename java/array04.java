@@ -5,7 +5,10 @@ public class array04 {
         System.out.println("enter elementes of the matrix");
         int row=4;
         int col=4;
-        
+        for(int i=0;i<row;i++){
+            
+        }
+
         
 
         
