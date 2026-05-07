@@ -7,7 +7,9 @@ public class array04 {
         int col=4;
         for(int i=0;i<row;i++){
             System.out.println("enter the elements of row "+(i+1));
-            
+            for(int j=0;j<col;j++){
+                
+            }
 
         }
 
