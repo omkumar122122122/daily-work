@@ -18,7 +18,9 @@ public class array04 {
         System.out.println("enter number to search");
         int n=sc.nextInt();
         for(int i=0;i<row;i++){
-            for(int j=0;j<col;j++)
+            for(int j=0;j<col;j++){
+                
+            }
 
         }
 
