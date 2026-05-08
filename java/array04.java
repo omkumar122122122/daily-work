@@ -19,7 +19,10 @@ public class array04 {
         int n=sc.nextInt();
         for(int i=0;i<row;i++){
             for(int j=0;j<col;j++){
-                
+                if(arr[i][j]==n){
+                    System.out.println(n+" found at index number  row= "+i+" col= "+j);
+                }
+
             }
 
         }
