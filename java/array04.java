@@ -16,7 +16,9 @@ public class array04 {
 
         }
         System.out.println("enter number to search");
+        int n=sc.nextInt();
         
+
 
 
         
