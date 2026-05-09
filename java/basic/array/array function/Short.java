@@ -10,10 +10,19 @@ package basic.array.array function;
 // | Length     | `arr.length`              | Returns the array size.           | `System.out.println(a.length);` |
 
 
+
+// Function	Syntax	Short Description	Example
+// sort()	Arrays.sort(arr);
+// 	Sorts the array in ascending order.
+// 	int[] a={5,2,8}; Arrays.sort(a); // {2,5,8}
+
+
 public class short {
     public static void main (String[] args ){
         Scanner sc=new Scanner(System.in);
         int[] arr=new int[10];
+        arr={1,2,3,48,5,9,7};
+
 
     }
     
