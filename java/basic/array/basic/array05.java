@@ -1,4 +1,4 @@
-package basic.array;
+package basic.array.basic;
 import java.util.*;
 public class array05 {
     public static void main(String[] args){
