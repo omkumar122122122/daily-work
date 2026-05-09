@@ -1,0 +1,36 @@
+
+| Operation  | Syntax                    | Description                       | Example                         |
+| ---------- | ------------------------- | --------------------------------- | ------------------------------- |
+| Declare    | `int[] arr;`              | Declares an array.                | `int[] marks;`                  |
+| Create     | `int[] arr = new int[5];` | Creates an array of size 5.       | `int[] a=new int[5];`           |
+| Initialize | `int[] arr={1,2,3};`      | Initializes an array with values. | `int[] a={10,20,30};`           |
+| Access     | `arr[index]`              | Accesses an element.              | `System.out.println(a[0]);`     |
+| Update     | `arr[index]=value;`       | Changes an element.               | `a[1]=50;`                      |
+| Length     | `arr.length`              | Returns the array size.           | `System.out.println(a.length);` |
+
+
+
+
+
+
+
+
+| Function             | Syntax                                    | Short Description                              | Example                                          |
+| -------------------- | ----------------------------------------- | ---------------------------------------------- | ------------------------------------------------ |
+| **sort()**           | `Arrays.sort(arr);`                       | Sorts the array in ascending order.            | `int[] a={5,2,8}; Arrays.sort(a); // {2,5,8}`    |
+| **binarySearch()**   | `Arrays.binarySearch(arr, key);`          | Searches for an element in a sorted array.     | `int pos=Arrays.binarySearch(a,5);`              |
+| **equals()**         | `Arrays.equals(arr1, arr2);`              | Checks if two arrays have the same elements.   | `Arrays.equals(a,b); // true`                    |
+| **fill()**           | `Arrays.fill(arr, value);`                | Fills all elements with the given value.       | `Arrays.fill(a,10); // {10,10,10}`               |
+| **copyOf()**         | `Arrays.copyOf(arr, newLength);`          | Creates a copy of an array.                    | `int[] b=Arrays.copyOf(a,5);`                    |
+| **copyOfRange()**    | `Arrays.copyOfRange(arr, from, to);`      | Copies a specific range of elements.           | `int[] b=Arrays.copyOfRange(a,1,3);`             |
+| **toString()**       | `Arrays.toString(arr);`                   | Converts an array into a readable string.      | `System.out.println(Arrays.toString(a));`        |
+| **deepToString()**   | `Arrays.deepToString(arr);`               | Prints multidimensional arrays.                | `System.out.println(Arrays.deepToString(arr));`  |
+| **deepEquals()**     | `Arrays.deepEquals(arr1, arr2);`          | Compares multidimensional arrays.              | `Arrays.deepEquals(x,y);`                        |
+| **deepHashCode()**   | `Arrays.deepHashCode(arr);`               | Returns hash code of a multidimensional array. | `int h=Arrays.deepHashCode(arr);`                |
+| **hashCode()**       | `Arrays.hashCode(arr);`                   | Returns hash code of an array.                 | `int h=Arrays.hashCode(a);`                      |
+| **stream()**         | `Arrays.stream(arr);`                     | Converts an array into a stream.               | `Arrays.stream(a).forEach(System.out::println);` |
+| **parallelSort()**   | `Arrays.parallelSort(arr);`               | Sorts large arrays using multiple threads.     | `Arrays.parallelSort(a);`                        |
+| **setAll()**         | `Arrays.setAll(arr, i -> value);`         | Sets each element using a function.            | `Arrays.setAll(a,i->i*2);`                       |
+| **parallelSetAll()** | `Arrays.parallelSetAll(arr, i -> value);` | Sets elements in parallel.                     | `Arrays.parallelSetAll(a,i->i+1);`               |
+| **parallelPrefix()** | `Arrays.parallelPrefix(arr, (x,y)->x+y);` | Performs cumulative operations.                | `Arrays.parallelPrefix(a,(x,y)->x+y);`           |
+| **mismatch()**       | `Arrays.mismatch(arr1, arr2);`            | Returns index of first different element.      | `Arrays.mismatch(a,b);`                          |

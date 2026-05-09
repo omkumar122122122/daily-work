@@ -1,4 +1,4 @@
-// package basic.array.array_function;
+package basic.array.array_function;
 
 // import java.util.Arrays;
 
