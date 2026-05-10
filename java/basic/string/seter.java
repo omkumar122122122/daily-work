@@ -10,5 +10,6 @@ public class seter {
         n=bit_mask|n;
         System.out.println(n);
     }
+ 
     
 }
