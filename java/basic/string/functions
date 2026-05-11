@@ -1,0 +1,21 @@
+// StringBuilder sb = new StringBuilder();
+
+// | Function             | Syntax                         | Description                                  | Example                   |
+// | -------------------- | ------------------------------ | -------------------------------------------- | ------------------------- |
+// | **append()**         | `sb.append(data);`             | Adds data at the end.                        | `sb.append(" Java");`     |
+// | **insert()**         | `sb.insert(index, data);`      | Inserts data at a specific index.            | `sb.insert(2,"X");`       |
+// | **replace()**        | `sb.replace(start, end, str);` | Replaces characters from `start` to `end-1`. | `sb.replace(0,2,"Hi");`   |
+// | **delete()**         | `sb.delete(start,end);`        | Deletes characters from `start` to `end-1`.  | `sb.delete(1,3);`         |
+// | **deleteCharAt()**   | `sb.deleteCharAt(index);`      | Deletes one character at the given index.    | `sb.deleteCharAt(2);`     |
+// | **reverse()**        | `sb.reverse();`                | Reverses the string.                         | `sb.reverse();`           |
+// | **charAt()**         | `sb.charAt(index);`            | Returns the character at the given index.    | `char ch=sb.charAt(1);`   |
+// | **setCharAt()**      | `sb.setCharAt(index,ch);`      | Changes the character at the given index.    | `sb.setCharAt(0,'A');`    |
+// | **length()**         | `sb.length();`                 | Returns the length of the string.            | `int len=sb.length();`    |
+// | **capacity()**       | `sb.capacity();`               | Returns the current capacity.                | `int c=sb.capacity();`    |
+// | **ensureCapacity()** | `sb.ensureCapacity(size);`     | Increases capacity if needed.                | `sb.ensureCapacity(50);`  |
+// | **setLength()**      | `sb.setLength(size);`          | Changes the length of the string.            | `sb.setLength(3);`        |
+// | **substring()**      | `sb.substring(start);`         | Returns substring from `start`.              | `sb.substring(2);`        |
+// | **substring()**      | `sb.substring(start,end);`     | Returns substring from `start` to `end-1`.   | `sb.substring(1,4);`      |
+// | **indexOf()**        | `sb.indexOf("str");`           | Returns first occurrence index.              | `sb.indexOf("an");`       |
+// | **lastIndexOf()**    | `sb.lastIndexOf("str");`       | Returns last occurrence index.               | `sb.lastIndexOf("a");`    |
+// | **toString()**       | `sb.toString();`               | Converts `StringBuilder` to `String`.        | `String s=sb.toString();` |
