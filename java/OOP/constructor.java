@@ -17,6 +17,12 @@ class Student{
         this.branch=branch;
 
     }
+
+    Student(Student s){
+        this.name=s.name;
+        this.branch=s.branch;
+
+    }
    
 }
 
@@ -31,6 +37,6 @@ public class constructor {
 
     }
 
-    
+
     
 }
