@@ -29,10 +29,11 @@ class Student{
 public class constructor {
 
     public static void main(){
-        Student s1= new Student();
         Student s2=new Student("om kumar","cse");
-        s1.detail();
         s2.detail();
+        Student s1= new Student(s2);
+        s1.detail();
+        
 
 
     }
