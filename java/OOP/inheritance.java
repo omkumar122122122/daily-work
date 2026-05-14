@@ -6,15 +6,22 @@ class shape{
 
 }
 class tringle extends shape{
+    int base;
+    int hight;
     void area(){
-        int base;
-        int hight;
-        System.out.println(1/2*base*hight)
+        System.out.println(1/2*this.base*this.hight);
 
     }
 
 }
 
 public class inheritance {
+    public static void main(){
+        tringle t1=new tringle();
+        t1.color="red";
+
+
+    }
+
     
 }
