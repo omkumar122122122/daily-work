@@ -17,6 +17,7 @@ function App() {
       </navbar>
 
       <section className="hero">
+        
         <div className="txt">
           <h1 className="hero-heading">Become a better frontend developer.</h1>
           <p id="p1">Take your frontend skills to the next level by recreating <b>real websites</b> from <b>real companies.</b></p>

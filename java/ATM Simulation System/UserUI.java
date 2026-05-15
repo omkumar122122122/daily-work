@@ -46,7 +46,7 @@ public class UserUI {
                 String sugg=sc.next();
             System.out.println("----------------------------------------------------------------------------------------------------");
 
-                if(sugg=="n"){
+                if(sugg.equals("n")){
                     continu=false;
                 }
 
