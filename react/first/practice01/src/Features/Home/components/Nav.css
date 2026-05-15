@@ -9,6 +9,9 @@
   .logo{
     font-size: larger;
   }
+  .logo :hover{
+    text-decoration: underline;
+  }
   
   .nav-links ul {
     display: flex;
@@ -18,4 +21,7 @@
     list-style: none;
     font-weight: 500;
     font-size: large;
+  }
+  .nav-links ul li :hover{
+    text-decoration: underline;
   }
