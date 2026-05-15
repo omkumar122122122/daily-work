@@ -27,6 +27,10 @@ public class inheritance {
         c1.color="red   ";
 
 
+        
+        // String ch = (String) '65';
+        // System.out.println(ch);
+
     }
 
     
