@@ -14,11 +14,17 @@ class tringle extends shape{
     }
 
 }
+class circle extends shape{
+    int radious;
+
+}
 
 public class inheritance {
     public static void main(){
         tringle t1=new tringle();
         t1.color="red";
+        circle c1=new circle();
+        c1.color="red   ";
 
 
     }
