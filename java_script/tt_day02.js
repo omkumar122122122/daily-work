@@ -32,3 +32,14 @@
 
 // console.log(this)
 
+// const user={
+//     name:"om",
+//     greet(){
+//         const say_ii =()=>{
+//             console.log(this.name);
+//         };
+//         say_ii();
+//     }
+// }
+
+// user.greet();
