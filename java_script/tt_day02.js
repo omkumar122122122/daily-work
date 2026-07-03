@@ -43,3 +43,17 @@
 // }
 
 // user.greet();
+
+
+const student={
+    name:"om",
+    age:20,
+    college:"sviet",
+    address:{
+        city:"banur",
+        state:"punjab"
+    }
+}
+
+// console.log(student.name,student.address.city)
+
