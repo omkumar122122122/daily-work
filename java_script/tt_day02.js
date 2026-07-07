@@ -57,3 +57,12 @@ const student={
 
 // console.log(student.name,student.address.city)
 
+const obj={
+    u_name:"cgman",
+    email:"hvihik",
+    followers:200,
+    bio:"asdfghjkl",
+}
+
+const{u_name,email}=obj;
+console.log(u_name)

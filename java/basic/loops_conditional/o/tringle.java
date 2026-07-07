@@ -1,3 +1,4 @@
+package basic.loops_conditional.o;
 public class tringle {
     public static void main(String[] args){
         int a=4,b=4;

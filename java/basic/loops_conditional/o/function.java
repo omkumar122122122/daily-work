@@ -1,3 +1,4 @@
+package basic.loops_conditional.o;
 import java.util.*;
 public class function {
     public static int factorial(int n){

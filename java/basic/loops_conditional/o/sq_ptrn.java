@@ -1,3 +1,4 @@
+package basic.loops_conditional.o;
 import java.util.*;
 public class sq_ptrn {
     public static void main(String[] args){

@@ -1,3 +1,4 @@
+package basic.loops_conditional.o;
 public class dimond_pttn {
     public static void main(String[] arug){
         for(int i=1 ;i<=4;i++){

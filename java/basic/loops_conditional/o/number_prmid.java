@@ -1,3 +1,4 @@
+package basic.loops_conditional.o;
 public class number_prmid {
     public static void main (String[] args){
         int n=5;
