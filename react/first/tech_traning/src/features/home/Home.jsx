@@ -1,10 +1,11 @@
 import React from 'react'
+import Nav from './components/Navbar'
+
 
 const home = () => {
   return (
-    <div>home</div>
+    <Nav />
   )
 }
-import Nav from "first\tech_traning\src\features\home\components\Navbar.jsx"
-<Nav />
+
 export default home
