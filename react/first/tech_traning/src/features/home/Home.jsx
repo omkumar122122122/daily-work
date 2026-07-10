@@ -2,6 +2,7 @@ import React from 'react'
 import Nav from './components/Navbar'
 import Hero from './components/Hero'
 import Features from './components/Features'
+import About from './components/About'
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
       <Nav  link="home"/>
       <Hero />
       <Features />
+      <About />
 
     </div>
   )
