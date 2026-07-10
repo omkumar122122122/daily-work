@@ -1,6 +1,6 @@
 import React from 'react'
 import Featrs_cards from './Featrs_cards'
-import image01 from 'C:\Users\OM KUMAR GUPTA\OneDrive\Desktop\daily work\react\first\tech_traning\src\assets\hero.png'
+
 
 function Features() {
   return (
