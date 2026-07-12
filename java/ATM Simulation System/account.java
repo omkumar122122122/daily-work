@@ -5,8 +5,13 @@ public class account extends transection {
     private double ballance;
 
     ArrayList<transection> history=new ArrayList<>();
+
+    public void set_pin(int pin){
+        this.pin=pin;
+    }
     public boolean validatepin(int pin){
         if(this.pin==pin){
+            System.out.println("pin validated succesfully");
             return true;
 
         }
@@ -21,6 +26,8 @@ public class account extends transection {
 
 
     public double getball(){
+        System.out.print("avilable ballance : ");
+
         return this.ballance;
     }
 
@@ -37,9 +44,11 @@ public class account extends transection {
         }
         else{
             this.ballance+=amount;
-            transection ts=null;
+            transection ts=new transection();
             ts.add_transection("deposit", amount);
             history.add(ts);
+
+            System.out.print("deposit succesfully \n avilable ballance : ");
 
             
 
@@ -54,26 +63,30 @@ public class account extends transection {
 
     public double widraw(){
         for(int i=3;i>0;i--){
+            System.out.println("enter amount");
+            double amount=sc.nextInt();
             System.out.println("enter pin ");
             int entrpin=sc.nextInt();
+              
             if(validatepin(entrpin)){
-                System.out.println("enter amount");
-                double amount=sc.nextInt();
-                if(amount<=0){
-                    System.out.println("invalid amount");
-                    return ballance;
+                if(amount<=0||amount>this.ballance){
+                    System.out.println("invalid amount \\n avilable ballance : ");
+                    return this.ballance;
                 }
                 else{
                     this.ballance-=amount;
-                    transection ts=null;
+                    transection ts=new transection();
                     ts.add_transection("deposit", amount);
                     history.add(ts);
+                    System.out.print("widrawal succesfully \n avilable ballance : ");
+
                     return this.ballance;
 
-                }   
+                } 
             }
             System.out.println("you have "+i+" chance left ");
         }
+        System.out.println("widrawal un susses full");
         return this.ballance;
 
 

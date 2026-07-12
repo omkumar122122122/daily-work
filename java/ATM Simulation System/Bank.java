@@ -18,7 +18,7 @@ public class Bank extends account {
     public int getacc(){
         return this.acc;
     }
-    
+   
     
     } 
     
