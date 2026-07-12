@@ -41,27 +41,34 @@ public class UserUI {
                     if(accounts.get(i).getacc()==account_number){
                         usernotfound=false;
                         currentuser=accounts.get(i);
-                        break;
+                        break ;
                     }
 
 
                 }
                 if(usernotfound){
-                    System.out.println("account not found give correct account number");
+                    System.out.println("account not found give correct account number\n\n");
                 }
                 else{
                     
+                    boolean islogined=false;
                     for(int i=0;i<3;i++){
                         System.out.println("you have "+(3-i)+" chance to enter your pasword \n enter pasword ");
                         String passwd=sc.next();
                         if(currentuser.getpass().equals(passwd)){
-                            
+                            islogined=true;
+                            System.out.println("logined succesfully");
+
 
                             break;
 
                         }
 
 
+                    }
+                    if(!islogined){
+                        System.out.println("limit reached try again later");
+                            break;
                     }
 
                 }
