@@ -39,16 +39,20 @@ public class account extends transection {
         System.out.println("enter amount");
         double amount=sc.nextDouble();
         if(amount<=0){
-            System.out.println("invalid amount");
+            System.out.println("invalid amount\ncurrent ballence : ");
+            transection ts=new transection();
+            ts.add_transection("deposit faild", amount,this.ballance);
+            history.add(ts);
             return ballance;
+
         }
         else{
             this.ballance+=amount;
             transection ts=new transection();
-            ts.add_transection("deposit", amount);
+            ts.add_transection("deposit", amount,this.ballance);
             history.add(ts);
 
-            System.out.print("deposit succesfully \n avilable ballance : ");
+            System.out.print("deposit succesfully\navilable ballance : ");
 
             
 
@@ -70,15 +74,18 @@ public class account extends transection {
               
             if(validatepin(entrpin)){
                 if(amount<=0||amount>this.ballance){
-                    System.out.println("invalid amount \\n avilable ballance : ");
+                    System.out.println("invalid amount\navilable ballance : ");
+                    transection ts=new transection();
+                    ts.add_transection("widrawal fail", amount,this.ballance);
+                    history.add(ts);
                     return this.ballance;
                 }
                 else{
                     this.ballance-=amount;
                     transection ts=new transection();
-                    ts.add_transection("deposit", amount);
+                    ts.add_transection("widrawal", amount,this.ballance);
                     history.add(ts);
-                    System.out.print("widrawal succesfully \n avilable ballance : ");
+                    System.out.print("widrawal succesfully\navilable ballance : ");
 
                     return this.ballance;
 
@@ -86,6 +93,9 @@ public class account extends transection {
             }
             System.out.println("you have "+i+" chance left ");
         }
+            transection ts=new transection();
+            ts.add_transection("widrawal fail", amount,this.ballance);
+            history.add(ts);
         System.out.println("widrawal un susses full");
         return this.ballance;
 

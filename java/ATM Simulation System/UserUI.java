@@ -4,35 +4,48 @@ public class UserUI {
     public static void main(String[] args){
         Scanner sc=new Scanner (System.in);
 
-        System.out.println("heloo..../n user");
+        System.out.println("\n\n\nheloo....\n user");
         ArrayList<Bank> accounts=new ArrayList<>();
         boolean continu=true;
         
 
         while(continu){
+            System.out.println("");
+            System.out.println("----------------------------------------------------------------------------------------------------");
         System.out.println("\n\nenter your option");
         System.out.println("1. create account");
         System.out.println("2. login ");
         int option=sc.nextInt();
+        System.out.println("----------------------------------------------------------------------------------------------------");
+
             if(option==1){
                 System.out.println("creating new account");
                 System.out.println("enter your name");
-                String name=sc.next();
+                sc.nextLine();
+                String name=sc.nextLine();
                 System.out.println("enter your age");
 
                 int age=sc.nextInt();
-                System.out.println("enter your pasword");
+                System.out.println("enter your pasword (only charector)");
                 String pass=sc.next();
-                Bank Acc=new Bank(pass);
+                Bank Acc=new Bank(pass,name,age);
                 accounts.add(Acc);
-                System.out.println("enter your pin of widrawal");
+                System.out.println("enter your pin of widrawal (numbers only)");
                 int pin=sc.nextInt();
                 Acc.set_pin(pin);
-                System.out.println("thank you for reaching out us  \n");
-                System.out.println("your account number is "+Acc.getacc()+"\n\n");
-                System.out.println("login to continue");
+            System.out.println("----------------------------------------------------------------------------------------------------");
+
+                System.out.println("\n\nthank you for reaching out us  \n");
+                System.out.println("***************************************************");
+                System.out.print("|");
+                System.out.println("your account number is "+Acc.getacc()+"                      |");
+                System.out.println("***************************************************\n");
+
+                System.out.println("login to continue...");
                 System.out.println("do you want to go back to main menu y/n");
                 String sugg=sc.next();
+            System.out.println("----------------------------------------------------------------------------------------------------");
+
                 if(sugg=="n"){
                     continu=false;
                 }
@@ -42,7 +55,8 @@ public class UserUI {
 
             }
             else if (option==2){
-                System.out.println("hello user \n welcome to our platform \n enter account number to login");
+                System.out.println("**********************************************************************************************************************");
+                System.out.println("hello user\nwelcome to our platform \nenter account number to login");
                 int account_number=sc.nextInt();
                 Bank currentuser=null;
                 boolean usernotfound=true;
@@ -64,23 +78,28 @@ public class UserUI {
                     
                     boolean islogined=false;
                     for(int i=0;i<3;i++){
-                        System.out.println("you have "+(3-i)+" chance to enter your pasword \n enter pasword ");
+                        System.out.println("you have "+(3-i)+" chance to enter your pasword \nenter pasword ");
                         String passwd=sc.next();
                         if(currentuser.getpass().equals(passwd)){
-                            System.out.println("logined succesfully \n");
+                System.out.println("\n**********************************************************************************************************************\n");
+
+                            System.out.println("logined succesfully \n"+"hello "+currentuser.name);
                             islogined=true;
                             int option1;
                             while (true) {
                                 
+            System.out.println("----------------------------------------------------------------------------------------------------");
                             
-                            System.out.println("\n\nenter your option");
+                            System.out.println("\nenter your option");
                             System.out.println("1. check ballance");
                             System.out.println("2. deposit money");
                             System.out.println("3. widraw");
                             System.out.println("4. view last transection history");
                             System.out.println("5. view whole transection history");
                             System.out.println("6. logout");
-                            option1=sc.nextInt();
+                            System.out.println("----------------------------------------------------------------------------------------------------\n");
+                            System.out.print("enter your option : "); option1=sc.nextInt();
+
                             if(option1==1){
                                 System.out.println(currentuser.getball());
                             }
@@ -114,6 +133,9 @@ public class UserUI {
                             else{
                                 System.out.println("in valid option");
                             }
+
+            System.out.println("----------------------------------------------------------------------------------------------------");
+
                         }
 
 
