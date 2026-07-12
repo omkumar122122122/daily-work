@@ -1,5 +1,5 @@
 import java.util.*;
-public class account {
+public class account extends transection {
     Scanner sc=new Scanner(System.in);
     private int pin;
     private double ballance;
@@ -15,20 +15,68 @@ public class account {
         }
     }
 
+
+
+
+
+
     public double getball(){
         return this.ballance;
     }
+
+
+
+
+
     public double deposit(){
         System.out.println("enter amount");
         double amount=sc.nextDouble();
+        if(amount<=0){
+            System.out.println("invalid amount");
+            return ballance;
+        }
+        else{
+            this.ballance+=amount;
+            transection ts=null;
+            ts.add_transection("deposit", amount);
+            history.add(ts);
+
+            
+
+            return this.ballance;
+            
+        }
         
-        this.ballance+=amount;
-        return this.ballance;
     } 
-    public double widraw(double amount){
-        if(validatepin(pin))
-        this.ballance-=amount;
+
+
+
+
+    public double widraw(){
+        for(int i=3;i>0;i--){
+            System.out.println("enter pin ");
+            int entrpin=sc.nextInt();
+            if(validatepin(entrpin)){
+                System.out.println("enter amount");
+                double amount=sc.nextInt();
+                if(amount<=0){
+                    System.out.println("invalid amount");
+                    return ballance;
+                }
+                else{
+                    this.ballance-=amount;
+                    transection ts=null;
+                    ts.add_transection("deposit", amount);
+                    history.add(ts);
+                    return this.ballance;
+
+                }   
+            }
+            System.out.println("you have "+i+" chance left ");
+        }
         return this.ballance;
+
+
 
     }
 

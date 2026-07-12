@@ -59,6 +59,9 @@ public class UserUI {
                         if(currentuser.getpass().equals(passwd)){
                             islogined=true;
                             int option1;
+                            while (true) {
+                                
+                            
                             System.out.println("logined succesfully \n");
                             System.out.println("enter your option");
                             System.out.println("1.check ballance");
@@ -68,6 +71,40 @@ public class UserUI {
                             System.out.println("5. view whole transection history");
                             System.out.println("6.logout");
                             option1=sc.nextInt();
+                            if(option1==1){
+                                currentuser.getball();
+                            }
+                            else if(option1==2){
+                                currentuser.deposit();
+
+                                
+                            }
+                            else if(option1==3){
+                                currentuser.widraw();
+                                
+                            }
+                            else if(option1==4){
+                                currentuser.history.get(currentuser.history.size()-1).print();
+                                
+                            }
+                            else if (option1==5) {
+                                for (int j = currentuser.history.size(); j >0 ; j--) {
+                                    currentuser.history.get(j).print();
+                                    
+                                    
+                                }
+
+                                
+                            }
+                            else if(option1==6){
+                                System.out.println("loging out ......");
+                                break;
+
+                            }
+                            else{
+                                System.out.println("in valid option");
+                            }
+                        }
 
 
                             break;
