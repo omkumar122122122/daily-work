@@ -6,9 +6,10 @@ public class UserUI {
 
         System.out.println("heloo....");
         ArrayList<Bank> accounts=new ArrayList<>();
+        boolean continu=true;
         
 
-        while(true){
+        while(continu){
         System.out.println("enter your option");
         System.out.println("1. create account");
         System.out.println("2. login ");
@@ -24,7 +25,7 @@ public class UserUI {
                 System.out.println("do you want to continu y/n");
                 String sugg=sc.next();
                 if(sugg=="n"){
-                    break;
+                    continu=false;
                 }
 
 
@@ -57,7 +58,15 @@ public class UserUI {
                         String passwd=sc.next();
                         if(currentuser.getpass().equals(passwd)){
                             islogined=true;
-                            System.out.println("logined succesfully");
+                            int option1;
+                            System.out.println("logined succesfully \n");
+                            System.out.println("enter your option");
+                            System.out.println("1.check ballance");
+                            System.out.println("2.deposit money");
+                            System.out.println("3. widraw");
+                            System.out.println("4. view transection history");
+                            System.out.println("5.logout");
+                            option1=sc.nextInt();
 
 
                             break;
