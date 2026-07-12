@@ -1,5 +1,5 @@
 
-public class Bank {
+public class Bank extends account {
     static int next_accountno=1000;
    
     

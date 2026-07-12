@@ -64,8 +64,9 @@ public class UserUI {
                             System.out.println("1.check ballance");
                             System.out.println("2.deposit money");
                             System.out.println("3. widraw");
-                            System.out.println("4. view transection history");
-                            System.out.println("5.logout");
+                            System.out.println("4. view last transection history");
+                            System.out.println("5. view whole transection history");
+                            System.out.println("6.logout");
                             option1=sc.nextInt();
 
 
