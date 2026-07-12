@@ -66,9 +66,9 @@ public class account extends transection {
 
 
     public double widraw(){
+        System.out.println("enter amount");
+        double amount=sc.nextInt();
         for(int i=3;i>0;i--){
-            System.out.println("enter amount");
-            double amount=sc.nextInt();
             System.out.println("enter pin ");
             int entrpin=sc.nextInt();
               
@@ -91,12 +91,12 @@ public class account extends transection {
 
                 } 
             }
-            System.out.println("you have "+i+" chance left ");
+            System.out.println("you have "+(i-1)+" chance left ");
         }
             transection ts=new transection();
             ts.add_transection("widrawal fail", amount,this.ballance);
             history.add(ts);
-        System.out.println("widrawal un susses full");
+        System.out.println("widrawal fail");
         return this.ballance;
 
 
