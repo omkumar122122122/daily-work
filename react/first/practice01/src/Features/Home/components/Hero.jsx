@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import himg from './image.png'
+import himg from './assets/image.png'
 import Button from './Button'
 
 function Hero() {

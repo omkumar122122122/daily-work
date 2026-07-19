@@ -1,0 +1,17 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d194f9;
+    padding: 0px 25px;
+    position:sticky;
+    /* width: 100vw; */
+    box-shadow: #8b10dd;
+}
+.link a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}

@@ -1,0 +1,19 @@
+.submain{
+    padding: 50px;
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    background: #ffd0ff;
+    border-radius: 15px;
+    box-shadow: violet;
+}
+.submain h1{
+    font-size: 55px;
+    padding-bottom: 0px;
+}
+.submain p{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-self: flex-end;
+}
