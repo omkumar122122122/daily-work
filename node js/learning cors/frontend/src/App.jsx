@@ -35,16 +35,18 @@ const App = () => {
           <h2>{item.name}</h2>
         </div>
       ))}
+      <h2>skills</h2>
 
       {data2.map((item) => (
         <div key={item.id}>
-          <h2>{item.name}</h2>
+          <p>{item}</p>
         </div>
       ))}
+      <h2>projects</h2>
 
       {data3.map((item) => (
         <div key={item.id}>
-          <h2>{item.name}</h2>
+          <p>{item}</p>
         </div>
       ))}
     </div>

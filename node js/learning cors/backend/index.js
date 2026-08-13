@@ -6,20 +6,21 @@ app.use(express.json())   // with this app can convert the data into json
 app.use(cors())
 
 let users1 = [
-    {id:1, name:"Rohit"},
-    {id:2, status:"done"},
+    {id:1, name:"om",
+        status:"done"
+    }
+    
     
 ];
 
 let users2 = [
-    {id:1, name:"Rohit1"},
-    {id:2, status:"done"},
+    "python","java","cpp","graphic designing","frontend development ","nodejs"
     
 ];
 
 let users3 = [
-    {id:1, name:"Rohit2"},
-    {id:2, status:"done"},
+    "velora :- a child saftsystem ",
+    "svieb :- a campus social media "
     
 ];
 
