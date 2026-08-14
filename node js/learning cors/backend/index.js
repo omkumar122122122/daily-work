@@ -13,12 +13,12 @@ let users1 = [
     
 ];
 
-let users2 = [
+let skill = [
     "python","java","cpp","graphic designing","frontend development ","nodejs"
     
 ];
 
-let users3 = [
+let proj = [
     "velora :- a child saftsystem ",
     "svieb :- a campus social media "
     
@@ -30,11 +30,11 @@ app.get("/users1", (req,res)=>{
 })
 
 app.get("/users2", (req,res)=>{
-    res.status(200).json(users2)
+    res.status(200).json(skill)
 })
 
 app.get("/users3", (req,res)=>{
-    res.status(200).json(users3)
+    res.status(200).json(proj)
 })
 
 
