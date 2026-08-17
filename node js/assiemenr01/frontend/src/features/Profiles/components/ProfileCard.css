@@ -1,0 +1,45 @@
+.profile-card {
+    width: 280px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 20px;
+  }
+  
+  .profile-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .profile-card-content h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+  }
+  
+  .profile-role {
+    margin: 0 0 18px;
+    color: #666;
+    font-size: 15px;
+  }
+  
+  .profile-skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+  }
+  
+  .profile-skill span:first-child {
+    color: #777;
+    font-size: 14px;
+  }
+  
+  .profile-skill span:last-child {
+    font-weight: bold;
+    font-size: 14px;
+  }

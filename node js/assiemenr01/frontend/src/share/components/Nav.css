@@ -1,0 +1,22 @@
+.navbarlink{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+.navbarlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+h1{
+    padding: 10px;
+}
