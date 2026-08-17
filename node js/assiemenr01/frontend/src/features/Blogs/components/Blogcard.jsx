@@ -18,7 +18,7 @@ const BlogCard = ({ blog }) => {
         </p>
 
         <button className="read-more">
-          Read More <span>→</span>
+          Read More
         </button>
       </div>
     </div>
