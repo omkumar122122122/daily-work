@@ -37,7 +37,7 @@ function Products() {
   // Fetch products when page loads
   useEffect(() => {
     fetchData();
-  }, []);
+  }, []); 
 
   // Frontend search with debounce
   useEffect(() => {
